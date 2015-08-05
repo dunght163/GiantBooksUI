@@ -15,34 +15,36 @@ angular.module('giantBooks.router', [
 )
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-            .when('/giant-books', {
-                templateUrl: 'giant-books/giantBooks.router.html',
-                controller: 'giantBooksController'
-            })
-
-            .when('/home', {
+            .when('/giant-books/home', {
                 templateUrl: 'giant-books/home/home.tpl.html',
                 controller: 'homeController'
             })
 
-            .when('/settings', {
+            .when('/giant-books/settings', {
                 templateUrl: 'giant-books/settings/settings.tpl.html',
                 controller: 'settingsController'
             })
 
-            .when('/about', {
+            .when('/giant-books/about', {
                 templateUrl: 'giant-books/about/about.tpl.html',
                 controller: 'aboutController'
             })
 
-            .when('/login', {
+            .when('/giant-books/login', {
                 templateUrl: 'giant-books/login/login.tpl.html',
                 controller: 'loginController'
             })
 
-            .when('/register', {
+            .when('/giant-books/register', {
                 templateUrl: 'giant-books/register/register.tpl.html',
                 controller: 'registerController'
             })
+
+            .when('/giant-books/page404', {
+                templateUrl: 'giant-books/page404.tpl.html'
+                //controller: 'registerController'
+            })
+
+            .otherwise({redirectTo: '/giant-books/page404'})
     }])
 ;

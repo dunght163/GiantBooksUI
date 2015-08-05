@@ -8,6 +8,12 @@ angular.module('myApp', [
     ]
 )
     .config(['$routeProvider', function ($routeProvider) {
-        $routeProvider.otherwise({redirectTo: '/giant-books'});
+        $routeProvider
+            .when('/giant-books', {
+                templateUrl: 'giant-books/giantBooks.router.html',
+                controller: 'giantBooksController'
+            })
+
+            .otherwise({redirectTo: '/giant-books/page404'});
     }])
 ;
