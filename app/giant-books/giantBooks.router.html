@@ -1,0 +1,34 @@
+<!--header: navigation fix to top-->
+<nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="giantBooksController">
+    <div class="container">
+        <!--header-->
+        <div class="navbar-header">
+            <!--button for responsive-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainMenu">
+                <span class="sr-only">Responsive menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!--brand name-->
+            <div class="navbar-brand"><a href="#"><span class="glyphicon glyphicon-book"></span> Giant-Books</a></div>
+        </div>
+
+        <!--menu-->
+        <div class="navbar-collapse collapse" id="mainMenu">
+            <!--left menu-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">SETTINGS</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+
+            <!--right menu-->
+            <div class="navbar-right">
+                <a class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                <a class="btn btn-primary navbar-btn"><span class="glyphicon glyphicon-record"></span> Register</a>
+            </div>
+        </div>
+    </div>
+</nav>

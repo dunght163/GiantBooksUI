@@ -15,33 +15,33 @@ angular.module('giantBooks.router', [
 )
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
-            .when('/giantBooks', {
-                templateUrl: 'giantbooks.router.html',
-                controller: 'GiantBooksRouterController'
+            .when('/giant-books', {
+                templateUrl: 'giant-books/giantBooks.router.html',
+                controller: 'giantBooksController'
             })
 
             .when('/home', {
-                templateUrl: 'home/home.tpl.html',
+                templateUrl: 'giant-books/home/home.tpl.html',
                 controller: 'homeController'
             })
 
             .when('/settings', {
-                templateUrl: 'settings/settings.tpl.html',
+                templateUrl: 'giant-books/settings/settings.tpl.html',
                 controller: 'settingsController'
             })
 
             .when('/about', {
-                templateUrl: 'about/about.tpl.html',
+                templateUrl: 'giant-books/about/about.tpl.html',
                 controller: 'aboutController'
             })
 
             .when('/login', {
-                templateUrl: 'login/login.tpl.html',
+                templateUrl: 'giant-books/login/login.tpl.html',
                 controller: 'loginController'
             })
 
             .when('/register', {
-                templateUrl: 'register/register.tpl.html',
+                templateUrl: 'giant-books/register/register.tpl.html',
                 controller: 'registerController'
             })
     }])
