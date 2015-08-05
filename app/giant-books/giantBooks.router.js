@@ -15,6 +15,10 @@ angular.module('giantBooks.router', [
 )
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider
+            .when('/giant-books', {
+                redirectTo: 'giant-books/home'
+            })
+
             .when('/giant-books/home', {
                 templateUrl: 'giant-books/home/home.tpl.html',
                 controller: 'homeController'
@@ -42,7 +46,7 @@ angular.module('giantBooks.router', [
 
             .when('/giant-books/page404', {
                 templateUrl: 'giant-books/page404.tpl.html'
-                //controller: 'registerController'
+                //controller: ''
             })
 
             .otherwise({redirectTo: '/giant-books/page404'})

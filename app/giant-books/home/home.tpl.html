@@ -1,3 +1,39 @@
-<div class="container">
+<!--header: navigation fix to top-->
+<nav class="navbar navbar-inverse navbar-fixed-top" ng-controller="giantBooksController">
+    <div class="container">
+        <!--header-->
+        <div class="navbar-header">
+            <!--button for responsive-->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainMenu">
+                <span class="sr-only">Responsive menu</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <!--brand name-->
+            <div class="navbar-brand"><a href="#/giant-books/home"><span class="glyphicon glyphicon-book"></span>
+                Giant-Books</a></div>
+        </div>
+
+        <!--menu-->
+        <div class="navbar-collapse collapse" id="mainMenu">
+            <!--left menu-->
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#/giant-books/home">HOME</a></li>
+                <li><a href="#/giant-books/settings">SETTINGS</a></li>
+                <li><a href="#/giant-books/about">ABOUT US</a></li>
+            </ul>
+
+            <!--right menu-->
+            <div class="navbar-right">
+                <a class="btn btn-primary navbar-btn" href="#/giant-books/login"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                <a class="btn btn-primary navbar-btn" href="#/giant-books/register"><span class="glyphicon glyphicon-record"></span> Register</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container pageContent">
     <h1>Home</h1>
 </div>
